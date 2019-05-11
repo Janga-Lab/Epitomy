@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq shotcode">
+    <meta name="author" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Epitomy</title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+    <!-- iconmind icon css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/iconmind-line.css') }}">
+
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!--owl carousel css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+
+    <!--nice-select css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+    <!-- global style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global-style.css') }}">
+
+    <!-- IGVJS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/igv-1.0.9.css') }}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>	
+	<script type="text/javascript" src="{{ url_for('static', filename='js/igv-1.0.9.js') }}"></script>	
+	
+
+
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assets/color.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/input.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/navbar.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/faq.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/tab.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/buttons.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/carousel.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/table.css') }}">
+	
+	<!--DATATABLE-->
+	<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/> class = display-->
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jqc-1.12.3/dt-1.10.16/datatables.min.js"></script>
+	<script type="text/javascript"> var jq = jQuery.noConflict(true); </script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/material.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.material.min.css">
+	
+	<!--HEATMAP-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	
+	<!-- Table2CSV -->
+	<script type="text/javascript" src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>
+	
+	<!-- Scroll dropdown -->
+	<style>.custom_dropdown {height: auto; max-height: 300px;overflow-x: hidden;}</style>
+
+</head>
+
+<body>
+    <!-- ======================================= 
+        ==Start breadcrumb section==  
+    =======================================-->
+	
+	
+	
+  <header class="bg_f8f fire_header2 header_common">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand order-1 order-lg-1" href="{{ url_for('process_data') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="250px" height="110px"></a>
+                        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbar2">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="active"><a href="{{ url_for('process_data') }}">Home</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)">Documentation <i class="fa fa-angle-down"></i></a>
+                                    <ul class="custom_dropdown">
+                                        <li><a class="dropdown-item" href="{{ url_for('documentation') }}">Database structure</a></li>
+                                        <li><a class="dropdown-item" href="{{ url_for('user_guide') }}">User guide</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                       </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	
+	<!-- ANNOTATIONS -->
+
+	  
+     <section class="fire_carousel fire_carousel5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="carousel5_wrapper owl-carousel">
+						{% for i in annotations %}
+                        <div class="single_testimonial">
+                            <div class="author_comment pos_relative bg_f8f radius_10 mt_30">
+                                <p class="color_66 fw_300" style="margin-left: 5%">{{ i }}</p>
+                            </div>
+                        </div>
+						{% endfor %}				
+                    </div>
+                </div>
+                <!--/col-->
+            </div>
+        </div>
+    </section>
+
+<br>
+		<!-- Modification Data -->
+	
+
+	 <div class="fire_tab fire_tab9 align_row_left_top" style="margin-left: 5%; margin-right: 5%">
+        <!-- Nav tabs -->
+		 		 <script type="text/javascript">$(function() {
+										  $('.align_col_center_center').first().addClass('active');
+										});</script>
+
+        <ul role="tablist" class="nav_menu nav nav-tabs flex-column">
+            {% if a_to_i != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#atoi" role="tab" aria-selected="false">A-to-I ({{ a_to_i|length }})</a></li>{% endif %}
+            {% if m1a != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m1a" role="tab" aria-selected="false">m1A ({{ m1a|length }})</a></li>{% endif %}
+            {% if m5c != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m5c" role="tab" aria-selected="false">m5C ({{ m5c|length }})</a></li>{% endif %}
+            {% if m6a != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m6a" role="tab" aria-selected="false">m6A ({{ m6a|length }})</a></li>{% endif %}
+            {% if nm != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#nm" role="tab" aria-selected="false">2’-O-Methylation ({{ nm|length }})</a></li>{% endif %}
+            {% if pseudou != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#pseudou" role="tab" aria-selected="false">Pseudouridine (Ψ) ({{ pseudou|length }})</a></li>{% endif %}
+			{% if dihydrouridine != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#dihydrouridine" role="tab" aria-selected="false">Dihydrouridine ({{ dihydrouridine|length }})</a></li>{% endif %}
+            {% if m1g != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m1g" role="tab" aria-selected="false">m1G ({{ m1g|length }})</a></li>{% endif %}
+            {% if m2g != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m2g" role="tab" aria-selected="false">m2G ({{ m2g|length }})</a></li>{% endif %}
+            {% if m7g != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#m7g" role="tab" aria-selected="false">m7G ({{ m7g|length }})</a></li>{% endif %}
+            {% if t6a != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#t6a" role="tab" aria-selected="false">T6A ({{ t6a|length }})</a></li>{% endif %}
+            {% if other != [] %}<li class="nav-item d-block"><a class="align_col_center_center" data-toggle="tab" href="#other" role="tab" aria-selected="false">Other ({{ other|length }})</a></li>{% endif %}
+
+
+		 </ul>
+        <!-- Tab panes -->
+        <div class="tab-content pl_50" style="width: 95%; height: auto; overflow: auto; white-space: nowrap;">
+		 <script type="text/javascript">$(function() {
+										  $('.tab-pane').first().addClass('active');
+										});</script>
+	{% if a_to_i != [] %}
+
+            <div id="atoi" class="tab-pane fade show " role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					
+					<script type="text/javascript">
+					
+					var dataSet_a_to_i = [ {% for i in range(0,a_to_i|length) %}
+					{% if 'chr' in a_to_i[i]['Chr'] %}
+					["{{ a_to_i[i]['Chr'] }}",
+                    "{{ a_to_i[i]['Start'] }}",
+                    "{{ a_to_i[i]['SNP'] }}",					 
+                    "{{ a_to_i[i]['Tissue'] }}",
+                    "{{ a_to_i[i]['Pubmed_ID'] }}",
+                    "{{ a_to_i[i]['Strand'] }}",
+                    "{{ a_to_i[i]['ENSG_ID'] }}",
+                    "{{ a_to_i[i]['ENST_ID'] }}",
+                    "{{ a_to_i[i]['Gene'] }}",
+                    "{{ a_to_i[i]['RNA_type'] }}",
+                    "{{ a_to_i[i]['Base_before_modification'] }}",
+                    "{{ a_to_i[i]['Modification'] }}"],
+					{% endif %}	
+
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#a_to_i_table').DataTable( {
+							data: dataSet_a_to_i,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="a_to_i_table" class="mdl-data-table" width="100%"></table>
+	
+    </div>
+            </div>
+						{% endif %}	
+
+        				{% if m1a != [] %}
+						
+			<div id="m1a" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m1a = [ {% for i in range(0,m1a|length) %}
+					{% if 'chr' in m1a[i]['Chr'] %}
+                
+                    ["{{ m1a[i]['Chr'] }}",
+                    "{{ m1a[i]['Start'] }}",
+                    "{{ m1a[i]['SNP'] }}",					 					 
+                    "{{ m1a[i]['Tissue'] }}",
+                    "{{ m1a[i]['Pubmed_ID'] }}",
+                    "{{ m1a[i]['Strand'] }}",
+                    "{{ m1a[i]['ENSG_ID'] }}",
+                    "{{ m1a[i]['ENST_ID'] }}",
+                    "{{ m1a[i]['Gene'] }}",
+                    "{{ m1a[i]['RNA_type'] }}",
+                    "{{ m1a[i]['Base_before_modification'] }}",
+                    "{{ m1a[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m1a_table').DataTable( {
+							data: dataSet_m1a,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m1a_table" class="mdl-data-table" width="100%"></table>
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if m5c != [] %}
+			
+			<div id="m5c" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m5c = [ {% for i in range(0,m5c|length) %}
+					{% if 'chr' in m5c[i]['Chr'] %}
+                
+                    ["{{ m5c[i]['Chr'] }}",
+                    "{{ m5c[i]['Start'] }}",
+                    "{{ m5c[i]['SNP'] }}",					 				 
+                    "{{ m5c[i]['Tissue'] }}",
+                    "{{ m5c[i]['Pubmed_ID'] }}",
+                    "{{ m5c[i]['Strand'] }}",
+                    "{{ m5c[i]['ENSG_ID'] }}",
+                    "{{ m5c[i]['ENST_ID'] }}",
+                    "{{ m5c[i]['Gene'] }}",
+                    "{{ m5c[i]['RNA_type'] }}",
+                    "{{ m5c[i]['Base_before_modification'] }}",
+                    "{{ m5c[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m5c_table').DataTable( {
+							data: dataSet_m5c,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m5c_table" class="mdl-data-table" width="100%"></table>
+		
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if m6a != [] %}
+			
+			<div id="m6a" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m6a = [ {% for i in range(0,m6a|length) %}
+					{% if 'chr' in m6a[i]['Chr'] %}
+                
+                    ["{{ m6a[i]['Chr'] }}",
+                    "{{ m6a[i]['Start'] }}",
+                    "{{ m6a[i]['SNP'] }}",					 					 
+                    "{{ m6a[i]['Tissue'] }}",
+                    "{{ m6a[i]['Pubmed_ID'] }}",
+                    "{{ m6a[i]['Strand'] }}",
+                    "{{ m6a[i]['ENSG_ID'] }}",
+                    "{{ m6a[i]['ENST_ID'] }}",
+                    "{{ m6a[i]['Gene'] }}",
+                    "{{ m6a[i]['RNA_type'] }}",
+                    "{{ m6a[i]['Base_before_modification'] }}",
+                    "{{ m6a[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m6a_table').DataTable( {
+							data: dataSet_m6a,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m6a_table" class="mdl-data-table" width="100%"></table>
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if nm != [] %}
+			
+			<div id="nm" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_nm = [ {% for i in range(0,nm|length) %}
+					{% if 'chr' in nm[i]['Chr'] %}
+                
+                    ["{{ nm[i]['Chr'] }}",
+                    "{{ nm[i]['Start'] }}",
+                    "{{ nm[i]['SNP'] }}",					 					 
+                    "{{ nm[i]['Tissue'] }}",
+                    "{{ nm[i]['Pubmed_ID'] }}",
+                    "{{ nm[i]['Strand'] }}",
+                    "{{ nm[i]['ENSG_ID'] }}",
+                    "{{ nm[i]['ENST_ID'] }}",
+                    "{{ nm[i]['Gene'] }}",
+                    "{{ nm[i]['RNA_type'] }}",
+                    "{{ nm[i]['Base_before_modification'] }}",
+                    "{{ nm[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#nm_table').DataTable( {
+							data: dataSet_nm,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="nm_table" class="mdl-data-table" width="100%"></table>
+			
+
+    </div>
+            </div>
+			{% endif %}	
+        				{% if pseudou != [] %}
+			
+			<div id="pseudou" class="tab-pane fade show" role="tabpanel">
+               <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_pseudou = [ {% for i in range(0,pseudou|length) %}
+					{% if 'chr' in pseudou[i]['Chr'] %}
+                
+                    ["{{ pseudou[i]['Chr'] }}",
+                    "{{ pseudou[i]['Start'] }}",
+                    "{{ pseudou[i]['SNP'] }}",					 					 
+                    "{{ pseudou[i]['Tissue'] }}",
+                    "{{ pseudou[i]['Pubmed_ID'] }}",
+                    "{{ pseudou[i]['Strand'] }}",
+                    "{{ pseudou[i]['ENSG_ID'] }}",
+                    "{{ pseudou[i]['ENST_ID'] }}",
+                    "{{ pseudou[i]['Gene'] }}",
+                    "{{ pseudou[i]['RNA_type'] }}",
+                    "{{ pseudou[i]['Base_before_modification'] }}",
+                    "{{ pseudou[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#pseudou_table').DataTable( {
+							data: dataSet_pseudou,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="pseudou_table" class="mdl-data-table" width="100%"></table>
+			
+			
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if dihydrouridine != [] %}
+			
+						<div id="dihydrouridine" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_dihydrouridine = [ {% for i in range(0,dihydrouridine|length) %}
+					{% if 'chr' in dihydrouridine[i]['Chr'] %}
+                
+                    ["{{ dihydrouridine[i]['Chr'] }}",
+                    "{{ dihydrouridine[i]['Start'] }}",
+                    "{{ dihydrouridine[i]['SNP'] }}",					 					 
+                    "{{ dihydrouridine[i]['Tissue'] }}",
+                    "{{ dihydrouridine[i]['Pubmed_ID'] }}",
+                    "{{ dihydrouridine[i]['Strand'] }}",
+                    "{{ dihydrouridine[i]['ENSG_ID'] }}",
+                    "{{ dihydrouridine[i]['ENST_ID'] }}",
+                    "{{ dihydrouridine[i]['Gene'] }}",
+                    "{{ dihydrouridine[i]['RNA_type'] }}",
+                    "{{ dihydrouridine[i]['Base_before_modification'] }}",
+                    "{{ dihydrouridine[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#dihydrouridine_table').DataTable( {
+							data: dataSet_dihydrouridine,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="dihydrouridine_table" class="mdl-data-table" width="100%"></table>
+			
+	
+    </div>
+            </div>
+			{% endif %}	
+			
+        				{% if m1g != [] %}
+			
+						<div id="m1g" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m1g = [ {% for i in range(0,m1g|length) %}
+					{% if 'chr' in m1g[i]['Chr'] %}
+                
+                    ["{{ m1g[i]['Chr'] }}",
+                    "{{ m1g[i]['Start'] }}",
+                    "{{ m1g[i]['SNP'] }}",					 					 
+                    "{{ m1g[i]['Tissue'] }}",
+                    "{{ m1g[i]['Pubmed_ID'] }}",
+                    "{{ m1g[i]['Strand'] }}",
+                    "{{ m1g[i]['ENSG_ID'] }}",
+                    "{{ m1g[i]['ENST_ID'] }}",
+                    "{{ m1g[i]['Gene'] }}",
+                    "{{ m1g[i]['RNA_type'] }}",
+                    "{{ m1g[i]['Base_before_modification'] }}",
+                    "{{ m1g[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m1g_table').DataTable( {
+							data: dataSet_m1g,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m1g_table" class="mdl-data-table" width="100%"></table>
+			
+	
+    </div>
+            </div>
+			{% endif %}	
+			
+        				{% if m2g != [] %}
+			
+						<div id="m2g" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m2g = [ {% for i in range(0,m2g|length) %}
+					{% if 'chr' in m2g[i]['Chr'] %}
+                
+                    ["{{ m2g[i]['Chr'] }}",
+                    "{{ m2g[i]['Start'] }}",
+                    "{{ m2g[i]['SNP'] }}",					 					 
+                    "{{ m2g[i]['Tissue'] }}",
+                    "{{ m2g[i]['Pubmed_ID'] }}",
+                    "{{ m2g[i]['Strand'] }}",
+                    "{{ m2g[i]['ENSG_ID'] }}",
+                    "{{ m2g[i]['ENST_ID'] }}",
+                    "{{ m2g[i]['Gene'] }}",
+                    "{{ m2g[i]['RNA_type'] }}",
+                    "{{ m2g[i]['Base_before_modification'] }}",
+                    "{{ m2g[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m2g_table').DataTable( {
+							data: dataSet_m2g,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m2g_table" class="mdl-data-table" width="100%"></table>
+		
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if m7g != [] %}
+			
+						<div id="m7g" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_m7g = [ {% for i in range(0,m7g|length) %}
+					{% if 'chr' in m7g[i]['Chr'] %}
+                
+                    ["{{ m7g[i]['Chr'] }}",
+                    "{{ m7g[i]['Start'] }}",
+                    "{{ m7g[i]['SNP'] }}",					 					 
+                    "{{ m7g[i]['Tissue'] }}",
+                    "{{ m7g[i]['Pubmed_ID'] }}",
+                    "{{ m7g[i]['Strand'] }}",
+                    "{{ m7g[i]['ENSG_ID'] }}",
+                    "{{ m7g[i]['ENST_ID'] }}",
+                    "{{ m7g[i]['Gene'] }}",
+                    "{{ m7g[i]['RNA_type'] }}",
+                    "{{ m7g[i]['Base_before_modification'] }}",
+                    "{{ m7g[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#m7g_table').DataTable( {
+							data: dataSet_m7g,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="m7g_table" class="mdl-data-table" width="100%"></table>			
+	
+    </div>
+            </div>
+			{% endif %}	
+			
+        				{% if other != [] %}
+			
+						<div id="other" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_other = [ {% for i in range(0,other|length) %}
+					{% if 'chr' in other[i]['Chr'] %}
+                
+                    ["{{ other[i]['Chr'] }}",
+                    "{{ other[i]['Start'] }}",
+                    "{{ other[i]['SNP'] }}",					 					 
+                    "{{ other[i]['Tissue'] }}",
+                    "{{ other[i]['Pubmed_ID'] }}",
+                    "{{ other[i]['Strand'] }}",
+                    "{{ other[i]['ENSG_ID'] }}",
+                    "{{ other[i]['ENST_ID'] }}",
+                    "{{ other[i]['Gene'] }}",
+                    "{{ other[i]['RNA_type'] }}",
+                    "{{ other[i]['Base_before_modification'] }}",
+                    "{{ other[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#other_table').DataTable( {
+							data: dataSet_other,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="other_table" class="mdl-data-table" width="100%"></table>
+			
+	
+    </div>
+            </div>
+			{% endif %}	
+        				{% if t6a != [] %}
+			
+						<div id="t6a" class="tab-pane fade show" role="tabpanel">
+                <div class="table_style1 table_style2 table-responsive">
+					<script type="text/javascript">
+					
+					var dataSet_t6a = [ {% for i in range(0,t6a|length) %}
+					{% if 'chr' in t6a[i]['Chr'] %}
+                
+                    ["{{ t6a[i]['Chr'] }}",
+                    "{{ t6a[i]['Start'] }}",
+                    "{{ t6a[i]['SNP'] }}",					 					 
+                    "{{ t6a[i]['Tissue'] }}",
+                    "{{ t6a[i]['Pubmed_ID'] }}",
+                    "{{ t6a[i]['Strand'] }}",
+                    "{{ t6a[i]['ENSG_ID'] }}",
+                    "{{ t6a[i]['ENST_ID'] }}",
+                    "{{ t6a[i]['Gene'] }}",
+                    "{{ t6a[i]['RNA_type'] }}",
+                    "{{ t6a[i]['Base_before_modification'] }}",
+                    "{{ t6a[i]['Modification'] }}"],
+						
+					{% endif %}
+                
+				{% endfor %}];
+ 
+					jq(document).ready(function() {
+						jq('#t6a_table').DataTable( {
+							data: dataSet_t6a,
+							columns: [
+								{% for i in modification_headers %}
+								{ title: "{{ i }}" },
+								{% endfor %}
+								]
+						} );
+					} );
+
+					
+					
+					</script>		
+					
+					<table id="t6a_table" class="mdl-data-table" width="100%"></table>
+	
+    </div>
+            </div>
+			{% endif %}	
+			
+			
+			
+			
+			
+			
+        </div>
+    </div>
+	
+	
+	<!--BROWSER VIEW-->
+	
+	
+	<br>
+	
+	
+	
+	<br>
+	
+
+<div class="fire_tab fire_tab3">
+        <!-- Nav tabs -->
+        <ul role="tablist" class="nav_menu nav nav-tabs d_inline clearfix radius_5">
+            <li class="nav-item"><a class="active" data-toggle="tab" href="#browser" role="tab" aria-selected="true">View Genome Browser</a></li>
+            <li class="nav-item"><a data-toggle="tab" href="#transcript" role="tab" aria-selected="false">View Transcript Expression</a></li>
+        </ul>
+
+	
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="browser" class="tab-pane fade show active" role="tabpanel">
+				
+				
+				<header class="bg_f8f fire_header6 header_common">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light d-lg-flex flex-lg-column">
+                        <div class="collapse navbar-collapse" id="navbar6">
+                            <ul class="navbar-nav m-auto">
+                                <li class="active"><a href="#" data-toggle="collapse" data-target="#demo">Add custom track from URL</a></li>
+								<li class="dropdown"><a href="javascript:void(0)">Transcript Expression Tracks <i class="fa fa-angle-down"></i></a>
+                                    <ul class="custom_dropdown">
+								{% for i in range(expression_files|length) %}
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/expression/{{ species }}/{{ expression_files[i] }}.bed.gz',
+                                 indexURL: 'static/browser_data/expression/{{ species }}/{{ expression_files[i] }}.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: '{{ expression_files[i] }}'})">{{ expression_files[i] }}</a></li>		
+								{% endfor %}
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="javascript:void(0)">Add individual Modification tracks <i class="fa fa-angle-down"></i></a>
+                                    <ul class="custom_dropdown">
+										{% if species=="human" %}
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_A_to_I.bed.gz',
+                                 indexURL: 'static/browser_data/modifications/{{ species }}/sorted_A_to_I.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'A-to-I'})">A-to-I</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m1a.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M1a'})">M1a</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_etc.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Other'})">Other</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_dihydrouridine.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Dihydrouridine'})">Dihydrouridine</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m5c.bed.gz',
+                                 indexURL: 'static/browser_data/modifications/{{ species }}/sorted_m5c.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M5c'})">M5c</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m6a.bed.gz',
+                                 indexURL: 'static/browser_data/modifications/{{ species }}/sorted_m6a.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M6a'})">M6a</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_nm.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: '2’-O-Methylation'})">2’-O-Methylation</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_pseudou.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Pseudouridine (Ψ)'})">Pseudouridine (Ψ)</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_c_to_u.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'C-to-U'})">C-to-U</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m1g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm1G'})">m1G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m2g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm2G'})">m2G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m7g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm7G'})">m7G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_t6a.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 't6A'})">t6A</a></li>
+							{% endif %}
+							{% if species=="mouse" %}
+                                 			<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_A_to_I.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'A-to-I'})">A-to-I</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m1a.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M1a'})">M1a</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_etc.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Other'})">Other</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_dihydrouridine.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Dihydrouridine'})">Dihydrouridine</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m5c.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M5c'})">M5c</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m6a.bed.gz',
+                                 indexURL: 'static/browser_data/modifications/{{ species }}/sorted_m6a.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'M6a'})">M6a</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_nm.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'NM'})">NM</a></li>
+                                        	<li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_pseudou.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'Pseudouridine (Ψ)'})">Pseudouridine (Ψ)</a></li>	
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_c_to_u.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'C-to-U'})">C-to-U</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m1g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm1G'})">m1G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m2g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm2G'})">m2G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_m7g.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 'm7G'})">m7G</a></li>
+                                 <li><a class="dropdown-item" href="#" onClick="igv.browser.loadTrack({
+                                 format: 'bed',
+                                 url: 'static/browser_data/modifications/{{ species }}/sorted_t6a.bed',
+                                 visibilityWindow: 300000000,
+                                 displayMode: 'EXPANDED',
+                                 label: 't6A'})">t6A</a></li>							
+							{% endif %}
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+				
+
+						  <div id="demo" class="collapse">
+
+
+						  <ul class="nav nav-tabs" role="tablist">
+						  <li class="nav-item">
+							<a class="nav-link active" href="#bed" role="tab" data-toggle="tab">Bed File</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#bam" role="tab" data-toggle="tab">Bam File</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#wig" role="tab" data-toggle="tab">Wig/Bigwig/BedGraph File</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div role="tabpanel" class="tab-pane active" id="bed">  <br>
+
+						<form id="myForm" style="overflow:auto;height:auto;width:60%;margin: 0px auto">
+
+						  <input type="text" class="form-control" name="data" id="data" value="Data source URL: .bed.gz File format" ><br>
+						  <input type="text" class="form-control" name="index" id="index" value="Index source URL: .bed.gz.tbi File format" ><br>
+						<input id="clickMe" type="button" class="btn btn-primary mb-2" value="Load Track" onclick="	igv.browser.loadTrack({
+														 format: 'bed',
+														 url: document.getElementById('data').value,
+														 indexURL: document.getElementById('index').value,
+														 displayMode: 'EXPANDED',
+														 visibilityWindow: 300000000,
+														 label: 'Custom BED track'})" /></form>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="bam">
+						  <br>
+
+						<form id="myForm_bam" style="overflow:auto;height:auto;width:60%;margin: 0px auto">
+
+						  <input type="text" class="form-control" name="data_bam" id="data_bam" value="Data source URL: .bam File format" ><br>
+						<input id="clickMe" type="button" class="btn btn-primary mb-2" value="Load Track" onclick="	igv.browser.loadTrack({
+													url: document.getElementById('data_bam').value,
+													label: 'Custom BAM track'
+												})" /></form>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="wig">
+							<br>
+
+						<form id="myForm_wiggle" style="overflow:auto;height:auto;width:60%;margin: 0px auto">
+
+						  <input type="text" class="form-control" name="data_wiggle" id="data_wiggle" value="Data source URL: .wig/.bigwig/.bedgraph File format" ><br>
+						<input id="clickMe" type="button" class="btn btn-primary mb-2" value="Load Track" onclick="	igv.browser.loadTrack( {
+														url: document.getElementById('data_wiggle').value,
+														name: 'Custom Wig/Bigwig/Bedgraph track'
+														})" /></form>
+
+						  </div>
+						</div>
+
+
+
+
+
+						  </div>
+
+				
+				
+				
+				
+				<!--IGV BROWSER DIVISION HERE-->
+				
+                <div class="container-fluid" id="igvDiv" style="padding:5px; border:1px solid lightgray; text-align:left !important"></div>
+            </div>
+
+            <div id="transcript" class="tab-pane fade" role="tabpanel">
+				<center><button id="export" data-export="export" class="btn btn-primary">Export Expression Data</button></center>                
+				{% if normalized_list|length > 0 %}
+                   <div id="heatmap" align="center" style="align-content: center; align-items: center; height: 100%"><!-- Plotly chart will be drawn inside this DIV --></div>
+				{% endif %}	
+				{% if normalized_list== [] %}
+				<h1>No expression data found</h1>
+				{% endif %}	
+				<script>
+					$(function(){
+						$("#export").click(function(){
+							$("#export_table").tableToCSV();
+						});
+					});
+				</script>
+				    <table id="export_table" class="table table-striped" style="display: none">
+					<tr>
+					{% for i in expression_keys %}
+					  <td>{{i}}</td>
+					{% endfor %}						
+					</tr>
+					{% for i in range(expression_final|length) %}
+						<tr>
+						{% for j in expression_keys %}
+						<td>{{ expression_final[i][j] }}</td>
+						{% endfor %}												
+						</tr>
+					{% endfor %}
+					
+				</table>
+            </div>
+
+        </div>
+    </div>
+  
+
+	
+
+<script type="text/javascript">
+						var screen_width = $(window).width()-100;
+						var screen_height = $(window).height()-100;	
+						var zValues = {{ expression_list }}
+						var zText = []
+						for (i = 0; i < zValues.length; i += 1) {
+																	zText.push([]);
+																	for (j = 0; j < zValues[i].length; j += 1) {
+																		prefix = "Expression Value (in RPKM): ";
+																		zText[i].push(prefix + zValues[i][j]);
+																	}
+																}
+						var data = [
+									  {
+										z: {{ normalized_list }},
+										{% if species == 'human' %}
+											x: ['Thyroid', 'Testis', 'Brain - Anterior cingulate cortex (BA24)', 'Skin - Not Sun Exposed (Suprapubic)',
+												'Esophagus - Mucosa', 'Heart - Atrial Appendage', 'Brain - Caudate (basal ganglia)',
+												'Esophagus - Muscularis',
+												'Brain - Putamen (basal ganglia)', 'Small Intestine - Terminal Ileum', 'Breast - Mammary Tissue',
+												'Cervix - Ectocervix', 'Cervix - Endocervix', 'Fallopian Tube', 'Brain - Cerebellum', 'Bladder',
+												'Brain - Cerebellar Hemisphere', 'Brain - Spinal cord (cervical c_1)', 'Artery - Coronary', 'Liver',
+												'Esophagus - Gastroesophageal Junction', 'Brain - Hypothalamus', 'Colon - Transverse',
+												'Brain - Amygdala',
+												'Pancreas', 'Adipose - Subcutaneous', 'Cells - Leukemia cell line (CML)', 'Spleen',
+												'Brain - Hippocampus', 'Whole Blood', 'Brain - Cortex', 'Artery - Tibial', 'Uterus', 'Stomach', 'Ovary',
+												'Artery - Aorta', 'Heart - Left Ventricle', 'Kidney - Cortex',
+												'Brain - Nucleus accumbens (basalganglia)',
+												'Prostate', 'Brain - Frontal Cortex (BA9)', 'Vagina', 'Adipose - Visceral (Omentum)', 'Adrenal Gland',
+												'Lung',
+												'Cells - Transformed fibroblasts', 'Muscle - Skeletal', 'Colon - Sigmoid', 'Nerve - Tibial',
+												'Brain - Substantia nigra', 'Cells - EBV-transformed lymphocytes'],
+										{% endif %}
+										 {% if species == 'mouse' %}
+											x: ['embryo', 'heart', 'bone marrow macrophage', 'fat pad', 'neural tube', 'embryonic fibroblast', 'brain', 'hindbrain', 'limb', 'stomach', 'erythroblast', 'midbrain', 'kidney', 'B cell', 'MEL cell line', 'testis', 'vesicular gland', 'G1E', 'subcutaneous adipose tissue', 'adrenal gland', 'gonadal fat pad', 'telencephalon', 'brown adipose tissue', 'placenta', 'intestine', 'forestomach', 'CH12.LX', 'ES-Bruce4', 'activated regulatory T-cells', 'cortical plate', 'regulatory T cell', 'skeletal muscle tissue', 'urinary bladder', 'cerebellum', 'small intestine', '416B', 'NIH3T3', 'pancreas', 'A20', 'Patski', 'G1E-ER4', 'embryonic facial prominence', 'bone marrow', 'spleen', 'thymus', 'splenic B cell', 'inflammation-experienced regulatory T-cells', 'forebrain', 'uterus', 'lung', 'ovary', 'muscle', 'olfactory bulb', 'liver'],
+										{% endif %}										 
+										 {% if species == 'human' %}
+											y: [{% for i in expression_final %} "{{ i['Transcript_stable_ID'] }}", {% endfor %} ],
+										{% endif %}										 
+										 {% if species == 'mouse' %}
+											y: [{% for i in expression_final %} "{{ i['Transcript_ID'] }}", {% endfor %} ],
+										{% endif %}														 
+												 
+										text: zText,
+										hoverinfo: 'text',
+										type: 'heatmap'
+									  }
+									];
+						  				var layout = {
+													  autosize: false,
+													  width: screen_width,
+													  height: screen_height,
+													  margin: {
+														l: 150,
+														b: 200,
+														r:200,
+														pad: 4
+													  },
+											xaxis: {
+													titlefont: {
+													  size: 12,
+													  color: 'lightgrey'
+													},
+													showticklabels: true,
+													tickangle: 30,
+													tickfont: {
+													  size: 9,
+													  color: 'black'
+													},
+													exponentformat: 'e',
+													showexponent: 'All'
+												  },
+											yaxis: {
+													titlefont: {
+													  size: 9,
+													  color: 'lightgrey'
+													},
+													showticklabels: true,
+													tickangle: 30,
+													tickfont: {
+													  size: 9,
+													  color: 'black'
+													},
+													exponentformat: 'e',
+													showexponent: 'All'
+												  }
+										};
+
+
+
+									Plotly.newPlot('heatmap', data, layout);
+						  
+					  </script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var div = $("#igvDiv"),
+                options = {
+                    showNavigation: true,
+                    showRuler: true,
+                    locus: "{{ location_coordinates }}",
+					{% if species == "human" %}
+                    reference: {
+                        id: "hg38",
+		                fastaURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/hg38/hg38.fa",
+						 indexURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/hg38/hg38.fa.fai",
+		                cytobandURL: "static/browser_data/fasta_file/cytoBand.txt"         
+                    },
+					{% endif %}
+					{% if species == "mouse" %}
+                    reference: {
+                        id: "mm10",
+		                fastaURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa",
+						 indexURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/mm10/mm10.fa.fai",
+		                cytobandURL: "static/browser_data/fasta_file/mouse_cytoband.txt"         
+                    },
+					{% endif %}
+
+                    tracks: [
+                        {
+                            name: "Genes",
+                            url: 'static/browser_data/base_genome/{{ species }}/base_genome.gtf.gz',
+							indexURL: 'static/browser_data/base_genome/{{ species }}/base_genome.gtf.gz.tbi',
+							format: 'gtf',
+							order: 1,
+                            visibilityWindow: 300000000,
+                            displayMode: "EXPANDED"
+                        },
+						{
+                                 format: 'bed',
+								 type: "annotation",
+                                 url: 'static/browser_data/snp/{{ species }}/snp_sorted.bed.gz',
+                                 indexURL: 'static/browser_data/snp/{{ species }}/snp_sorted.bed.gz.tbi',
+                                 visibilityWindow: 300000000,
+                                 label: 'SNPs',
+								 order: 2,
+								 displayMode: "EXPANDED"
+						},
+						{
+                                 format: 'bed',
+								 type: "annotation",
+                                 url: 'static/browser_data/modifications/{{ species }}/main.bed.gz',
+                                 indexURL: 'static/browser_data/modifications/{{ species }}/main.bed.gz.tbi',
+                                 visibilityWindow: 1000000,
+                                 label: 'All Modifications',
+								 order: 3,
+								 displayMode: "EXPANDED"
+						}
+						
+                    ]
+                };
+
+        var myIgvBrowser = igv.createBrowser(div, options);
+		
+    });
+
+</script>
+	
+	
+
+    
+	
+	
+	
+	
+	
+	<!-- Footer -->
+<div class="footer">
+<footer class="page-footer font-small blue pt-4 mt-4" style="background: #f8f8f8">
+  <div class="bg_f8f fire_header2 header_common" style="text-align: center">
+    <a href="http://www.iupui.edu/~jangalab/"> Janga Lab, Laboratory of Genomics and Systems Biology at Indiana University, IUPUI, Indianapolis, IN, USA<br><br></a>
+</div>
+</footer>
+<!-- Footer -->
+</div>
+  
+
+
+
+    <!-- ======================================= 
+        ==Start scroll top==  
+    =======================================-->
+    <div class="scroll_top not_visible"><i class="fa fa-angle-up"></i></div>
+    <!-- =======================================
+        ==End scroll top==  
+    =======================================-->
+
+    <!-- jQuary library -->
+	
+    <!--bootstrap js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!--owl carousel js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+    <!--nice-select js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+    <!-- all jQuary activation code here and always it will be bottom of all script tag -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+
+
+</body>
+
+</html>

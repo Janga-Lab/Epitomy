@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq shotcode">
+    <meta name="author" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Epitomy</title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+    <!-- iconmind icon css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/iconmind-line.css') }}">
+
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!--owl carousel css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+
+    <!--nice-select css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+    <!-- global style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global-style.css') }}">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assets/color.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/input.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/navbar.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/faq.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/tab.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/buttons.css') }}">
+
+
+
+<script>
+
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.contact.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.contact.email.focus();
+return false;
+}
+}
+</script>
+
+
+
+</head>
+
+<body>
+    <!-- ======================================= 
+        ==Start breadcrumb section==  
+    =======================================-->
+	
+	
+	
+<header class="bg_f8f fire_header2 header_common">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand order-1 order-lg-1" href="{{ url_for('process_data') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="250px" height="110px"></a>
+                        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbar2">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="active"><a href="{{ url_for('process_data') }}">Home</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)">Documentation <i class="fa fa-angle-down"></i></a>
+                                    <ul class="custom_dropdown">
+                                        <li><a class="dropdown-item" href="{{ url_for('documentation') }}">Database structure</a></li>
+                                        <li><a class="dropdown-item" href="{{ url_for('user_guide') }}">User guide</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                       </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<br><br>
+	
+	
+	<style>.nice-select {padding-top:0px}</style>
+{% if alert!=0 %}
+{{alert}}
+{% endif %}
+<div class="container">
+<h2>Contact us</h2>
+
+  <form method="POST" name="contact" class="fire_input2" action="{{ url_for('contact') }}"> 
+     
+ <div class="group">
+            <label>First name:</label>
+            <input type="text" name="fname" id="fname" class="input1">
+        </div>
+        <div class="group">
+            <label>Last name:</label>
+            <input type="text" name="lname" id="lname" class="input1">
+        </div><br>
+        <div class="group">
+            <label>Email:</label>
+            <input type="text" name="email" id="email" class="input1">
+        </div><br>
+        <div class="fire_select1 fire_select">
+                    <label>Contact reason:</label>
+
+																    <select name="contact_reason" id="contact_reason">
+																		<option value="feedback" >Feedback</option>
+																		<option value="bug_report" >Bug Report</option>
+																		<option value="data_request" >Request Data</option>
+																		<option value="other" >Other</option>
+																	  </select>
+        </div>
+		<input type="hidden" value="epitomy" name="website" />
+
+        <div class="group textarea mt_50">
+            <label>Message:</label>
+            <textarea rows="10" cols="30" name="msg" id="msg"></textarea>
+        </div>
+     
+<ul>
+<li>&nbsp;</li>
+<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.contact.email)"/></li>
+<li>&nbsp;</li>
+</ul>
+</form>
+    
+</div>        
+
+    
+	
+	
+	
+	
+	
+	<!-- Footer -->
+<div class="footer">
+<footer class="page-footer font-small blue pt-4 mt-4" style="background: #f8f8f8">
+  <div class="bg_f8f fire_header2 header_common" style="text-align: center">
+    <a href="http://www.iupui.edu/~jangalab/"> Janga Lab, Laboratory of Genomics and Systems Biology at Indiana University, IUPUI, Indianapolis, IN, USA<br><br></a>
+</div>
+</footer>
+<!-- Footer -->
+</div>
+  
+
+
+
+    <!-- ======================================= 
+        ==Start scroll top==  
+    =======================================-->
+    <div class="scroll_top not_visible"><i class="fa fa-angle-up"></i></div>
+    <!-- =======================================
+        ==End scroll top==  
+    =======================================-->
+
+    <!-- jQuary library -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	
+    <!-- Added for autosuggest -->
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!--bootstrap js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!--owl carousel js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+    <!--nice-select js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+    <!-- all jQuary activation code here and always it will be bottom of all script tag -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+	
+    <!--Autosuggest-->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/autosuggest/human.js') }}"></script>
+
+</body>
+
+</html>

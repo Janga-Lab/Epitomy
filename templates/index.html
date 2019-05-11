@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq shotcode">
+    <meta name="author" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]---->
+    <title>Epitomy</title>
+
+    <!--favicon icon---->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+    <!--google font---->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- font awesome css ---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+    <!-- iconmind icon css ---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/iconmind-line.css') }}">
+
+    <!--bootstrap min css---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!--owl carousel css---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+
+    <!--nice-select css---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+    <!-- global style css ---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global-style.css') }}">
+
+    <!-- style css ---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assets/color.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/input.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/navbar.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/faq.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/tab.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/buttons.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/alert.css') }}">
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/assets/accordion.css') }}">
+
+	
+
+
+</head>
+
+<body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123668112-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123668112-1');
+</script>   
+	
+	
+  <header class="bg_f8f fire_header2 header_common">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand order-1 order-lg-1" href="{{ url_for('process_data') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="250px" height="110px"></a>
+                        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbar2">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="active"><a href="{{ url_for('process_data') }}">Home</a></li>
+                                <li class="dropdown"><a href="javascript:void(0)">Documentation <i class="fa fa-angle-down"></i></a>
+                                    <ul class="custom_dropdown">
+                                        <li><a class="dropdown-item" href="{{ url_for('documentation') }}">Database structure</a></li>
+                                        <li><a class="dropdown-item" href="{{ url_for('user_guide') }}">User guide</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                       </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+<br>	
+	
+	
+	
+	
+	
+	
+<section class="fire_faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5">
+                    <div class="faq_tab_menu clearfix">
+                        <div class="general">
+                            <h5 class="color_22 fw_300">Genomes</h5>
+                            <ul role="tablist" class="nav nav-tabs">
+                                <li class="nav-item"><a class="active" data-toggle="tab" href="#tab1" role="tab" aria-selected="true">Human (hg38)</a></li>
+                                <li class="nav-item"><a data-toggle="tab" href="#tab2" role="tab" aria-selected="false">Mouse (mm10)</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-xl-8 col-lg-7">
+                    <div class="faq_tab_content">
+                        <div id="myTabContent" class="tab-content">
+                            <div id="tab1" role="tabpanel" class="tab-pane fade show active">
+                                <h4 class="fw_300 color_22">Search for RNA modifications in human genome</h4>
+								
+								
+								 <div class="fire_tab fire_tab5">
+									<!-- Nav tabs ---->
+									<ul role="tablist" class="nav_menu nav nav-tabs d_inline clearfix">
+										<li class="nav-item"><a class="active" data-toggle="tab" href="#human_gene" role="tab" aria-selected="true">Search by gene</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#human_coordinates" role="tab" aria-selected="false">Search by coordinates</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#mod_type" role="tab" aria-selected="false">Search by modification type</a></li>
+										
+									</ul>
+
+									<!-- Tab panes ---->
+									<div class="tab-content">
+										<div id="human_gene" class="tab-pane fade show active" role="tabpanel">
+											<div class="tab_text">
+												<form class="form-inline align-items-center align-self-center justify-content-center d-flex"  method="POST" action="{{ url_for('process_data') }}">
+													<div class="input-group">
+														<input type="text" class="form-control align-self-center" placeholder="Enter Gene name or ENSEMBL ID" required name="gene_search_field" id="auto_human" size="30">
+															  <div class="input-group-append">
+																  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+															  </div>
+														<input type="hidden" value="human_gene" name="check" />
+													</div>
+												</form>
+											</div>
+										</div>
+										<div id="mod_type" class="tab-pane fade" role="tabpanel">
+                                        <br>
+                                        <div class="container">
+                                        	
+                                                    <label>Modification:</label>
+                                                    <div id="collapseOne" class="collapse show" role="tabpanel" data-parent="#accordion">
+                                                            <form method="POST" action="{{ url_for('process_data') }}">
+												<div class="tab_text">
+															
+																    <select name="modification" id="modification">
+																		<option value="a_to_i_top" >A-to-I</option>
+																		<option value="dihydrouridine" >Dihydrouridine</option>
+																		<option value="m1a" >m1A</option>
+																		<option value="m1g" >m1G</option>
+																		<option value="m2g" >m2G</option>
+																		<option value="m5c" >m5C</option>
+																		<option value="m6a_top" >m6A</option>
+																		<option value="m7g" >m7G</option>
+																		<option value="nm" > 2’-O-Methylation</option>
+																		<option value="t6a" >T6A</option>
+																		<option value="pseudou" >Pseudouridine (Ψ)</option>
+																		<option value="etc" >Other</option>
+																	  </select><br>
+														<input type="hidden" value="mod_type" name="check" />
+													  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+
+													</div>
+														</form>
+                                                </div>
+                                        			<label>Pubmed ID:</label>
+                                                             <form class="fire_input2" method="POST" action="{{ url_for('process_data') }}">
+												<div class="tab_text">
+															
+																    <select name="modification" id="modification">
+																		<option value="m6a|27371828">m6A profiling in CD4(+) T-cells/ Jurkat T-cells (PMID: 27371828)</option>
+                                                                        <option value="m6a|26404942">m6A profiling in CD8 T cells/A549  (PMID: 26404942)</option>
+                                                                        <option value="m6a|22575960">m6A profiling in HepG2/Brain (PMID: 22575960)</option>
+                                                                        <option value="m6a|24284625">m6A profiling in Hela (PMID: 24284625)</option>
+                                                                        <option value="m6a|24981863">m6A profiling in iPSCs/ (PMID: 24981863)</option>
+                                                                        <option value="m6a|25456834">m6A profiling in ESCs(WA01) (PMID: 25456834)</option>
+                                                                        <option value="m6a|28052920">m6A profiling in GM12878/GM19193/GM19238 (PMID: 28052920)</option>
+                                                                        <option value="m6a|22608085">m6A profiling in HEK293T (PMID: 22608085)</option>
+                                                                        <option value="m6a|27773536">m6A profiling in HEK293T (PMID: 27773536)</option>
+                                                                        <option value="m6a|24209618">m6A profiling in U2OS (PMID: 24209618)</option>
+                                                                        <option value="m6a|27773535">m6A profiling in Huh7,/Huh7.5 (PMID: 27773535)</option>
+                                                                        <option value="etc|23118484">Other modifications profiling across multiple tissues (PMID: 23118484)</option>
+                                                                        <option value="m1a|26863196">m1A profiling in Hela/HepG2/HEK293 (PMID: 26863196)</option>
+                                                                        <option value="m1a|26863410">m1A profiling in HEK293T (PMID: 26863410)</option>
+                                                                        <option value="c_to_u|25898173">C-to-U profiling in monocytes (PMID: 25898173)</option>
+                                                                        <option value="c_to_u|27149507">C-to-U profiling in HEK293T (PMID: 27149507)</option>
+                                                                        <option value="c_to_u|27974822">C-to-U profiling in HEK293T (PMID: 27974822)</option>
+                                                                        <option value="m5c|22344696">m5C profiling in Hela (PMID: 22344696)</option>
+                                                                        <option value="m5c|28418038">m5C profiling in Hela (PMID: 28418038)</option>
+                                                                        <option value="m5c|23604283">m5C profiling in Hela (PMID: 23604283)</option>
+                                                                        <option value="nm|16381836"> 2’-O-Methylation profiling across multiple tissues (PMID: 16381836)</option>
+                                                                        <option value="nm|28504680"> 2’-O-Methylation profiling in Hela/HEK293 (PMID: 28504680)</option>
+                                                                        <option value="a_to_i|22327324">A-to-I profiling in lymphoblastoid (PMID: 22327324)</option>
+                                                                        <option value="a_to_i|18684997">A-to-I profiling in brain (PMID: 18684997)</option>
+                                                                        <option value="a_to_i|24347612">A-to-I profiling data from Illumina Human Body Map (HBM) and Han Chinese (YH) (PMID: 24347612)</option>
+                                                                        <option value="a_to_i|19478186">A-to-I profiling in Multiple tissues (PMID: 19478186)</option>
+                                                                        <option value="a_to_i|15342557">A-to-I profiling in cDNA (PMID: 15342557)</option>
+                                                                        <option value="a_to_i|15797904">A-to-I profiling in exon sequences (PMID: 15797904)</option>
+                                                                        <option value="a_to_i|16100382">A-to-I profiling in lung/oral cavity carcinoma (PMID: 16100382)</option>
+                                                                        <option value="a_to_i|25158696">A-to-I profiling in  Illumina Human BodyMap 2.0
+(PMID: 25158696)</option>
+                                                                        <option value="a_to_i|16594986">A-to-I profiling in Multiple tissues (PMID: 16594986)</option>
+                                                                        <option value="a_to_i|22028664">A-to-I profiling in human ESTs/mRNAs (PMID: 22028664)</option>
+                                                                        <option value="a_to_i|19275900">A-to-I profiling in Brain (PMID: 19275900)</option>
+                                                                        <option value="a_to_i|21984433">A-to-I profiling in Brain (PMID: 21984433)</option>
+                                                                        <option value="a_to_i|21960545">A-to-I profiling in U87MG (PMID: 21960545)</option>
+                                                                        <option value="a_to_i|15545495">A-to-I profiling in Brain (PMID: 15545495)</option>
+                                                                        <option value="a_to_i|15731336">A-to-I profiling in Multiple tissues (PMID: 15731336)</option>
+                                                                        <option value="a_to_i|15258596">A-to-I profiling in Multiple tissues (PMID: 15258596)</option>
+                                                                        <option value="pseudou|26075521">Pseudouridine (Ψ) profiling in HEK293T/PUS1 (PMID: 26075521)</option>
+                                                                        <option value="pseudou|25219674">Pseudouridine (Ψ) profiling in Hek293/A549/ESCs/fibroblasts (PMID: 25219674)</option>
+                                                                        <option value="pseudou|25192136">Pseudouridine (Ψ) profiling in Hela (PMID: 25192136)</option>
+																	  </select>
+																											<input type="hidden" value="pubmed_type" name="check" /><br>
+													  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+
+													</div>
+														</form>
+                                                    </div>
+														
+										</div>										
+
+										<div id="human_coordinates" class="tab-pane fade" role="tabpanel">
+											<div class="tab_text">
+												<form class="form-inline align-items-center align-self-center justify-content-center d-flex"  method="POST" action="{{ url_for('process_data') }}">
+														<div class="input-group">
+														<input type="text" class="form-control align-self-center" placeholder="Enter START and STOP separated by |" required name="gene_search_field" id="auto" size="30">
+															  <div class="input-group-append" >
+																    <select class="custom-select" name="chrom" id="chrom">
+																		<option value="chr1">CHR1</option>
+																		<option value="chr2">CHR2</option>
+																		<option value="chr3">CHR3</option>
+																		<option value="chr4">CHR4</option>
+																		<option value="chr5">CHR5</option>
+																		<option value="chr6">CHR6</option>
+																		<option value="chr7">CHR7</option>
+																		<option value="chr8">CHR8</option>
+																		<option value="chr9">CHR9</option>
+																		<option value="chr10">CHR10</option>
+																		<option value="chr11">CHR11</option>
+																		<option value="chr12">CHR12</option>
+																		<option value="chr13">CHR13</option>
+																		<option value="chr14">CHR14</option>
+																		<option value="chr15">CHR15</option>
+																		<option value="chr16">CHR16</option>
+																		<option value="chr17">CHR17</option>
+																		<option value="chr18">CHR18</option>
+																		<option value="chr19">CHR19</option>
+																		<option value="chr20">CHR20</option>
+																		<option value="chr21">CHR21</option>
+																		<option value="chr22">CHR22</option>
+																		<option value="chrx">CHRX</option>
+																		<option value="chry">CHRY</option>
+																	  </select>
+																  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+															  </div>
+														</div>
+														<input type="hidden" value="human_coordinates" name="check" />
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+
+							
+							
+							
+                            <!--tab-pane-2---->
+                            <div id="tab2" role="tabpanel" class="tab-pane fade">
+                                <h4 class="fw_300 color_22">Search for RNA modifications in mouse genome</h4>
+									<div class="fire_tab fire_tab5">
+									<!-- Nav tabs ---->
+									<ul role="tablist" class="nav_menu nav nav-tabs d_inline clearfix">
+										<li class="nav-item"><a class="active" data-toggle="tab" href="#mouse_gene" role="tab" aria-selected="true">Search by gene</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#mouse_coordinates" role="tab" aria-selected="false">Search by coordinates</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#mouse_mod_type" role="tab" aria-selected="false">Search by modification type</a></li>
+										
+									</ul>
+
+									<!-- Tab panes ---->
+									<div class="tab-content">
+										<div id="mouse_gene" class="tab-pane fade show active" role="tabpanel">
+											<div class="tab_text">
+												<form class="form-inline align-items-center align-self-center justify-content-center d-flex"  method="POST" action="{{ url_for('process_data') }}">
+													<div class="input-group">
+														<input type="text" class="form-control align-self-center" placeholder="Enter Gene name or ENSEMBL ID" required name="gene_search_field" id="auto_mouse" size="30">
+															  <div class="input-group-append">
+																  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+															  </div>
+														<input type="hidden" value="mouse_gene" name="check" />
+													</div>
+												</form>
+											</div>
+										</div>
+										<div id="mouse_mod_type" class="tab-pane fade" role="tabpanel">
+													<br>
+                                                    <div class="container">
+                                        	
+                                                    <label>Modification:</label>
+                                                            <form method="POST" action="{{ url_for('process_data') }}">
+												<div class="tab_text">
+															
+																    <select name="modification" id="modification">
+																		<option value="a_to_i" >A-to-I</option>
+																		<option value="dihydrouridine" >Dihydrouridine</option>
+																		<option value="m1a" >m1A</option>
+																		<option value="m1g" >m1G</option>
+																		<option value="m2g" >m2G</option>
+																		<option value="m5c" >m5C</option>
+																		<option value="m6a_top" >m6A</option>
+																		<option value="m7g" >m7G</option>
+																		<option value="nm" > 2’-O-Methylation</option>
+																		<option value="t6a" >T6A</option>
+																		<option value="pseudou" >Pseudouridine (Ψ)</option>
+																		<option value="etc" >Other</option>
+																	  </select><br>
+														<input type="hidden" value="mouse_mod_type" name="check" />
+													  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+
+													</div>
+														</form>
+                                        			<label>Pubmed ID:</label>
+                                                             <form class="fire_input2" method="POST" action="{{ url_for('process_data') }}">
+												<div class="tab_text">
+															
+																    <select name="modification" id="modification">
+																		<option value="m6a|24981863">m6A profiling in BMDCs/Brain MEFs(e16) (PMID: 24981863)</option>
+                                                                        <option value="m6a|25456834">m6A profiling in ESCs(J-1) (PMID: 25456834)</option>
+                                                                        <option value="m6a|25569111">m6A profiling in ESCs/EpiSCs (PMID: 25569111)</option>
+                                                                        <option value="m6a|22575960">m6A profiling in Liver (PMID: 22575960)</option>
+                                                                        <option value="m6a|22608085">m6A profiling in Brain (PMID: 22608085)</option>
+                                                                        <option value="m6a|25412662">m6A profiling in MEFs/3T3-L1 (PMID: 25412662)</option>
+                                                                        <option value="m6a|26404942">m6A profiling in Brain/Liver (PMID: 26404942)</option>
+                                                                        <option value="m6a|25683224">m6A profiling in Multiple tissues (PMID: 25683224)</option>
+                                                                        <option value="a_to_i|23264566">A-to-I profiling in brain (PMID: 23264566)</option>
+                                                                        <option value="a_to_i|22524474">A-to-I profiling in brain (PMID: 22524474)</option>
+                                                                        <option value="a_to_i|22448268">A-to-I profiling in Multiple tissues tissue (PMID: 22448268)</option>
+                                                                        <option value="a_to_i|16940548">A-to-I profiling in RNA sequences (PMID: 16940548)</option>
+                                                                        <option value="etc|23118484">Other profiling across multiple tissues (PMID: 23118484)</option>
+                                                                        <option value="m5c|28077169">m5C profiling in ESCs/brain (PMID: 28077169)</option>
+                                                                        <option value="m5c|28418038">m5C profiling in Multiple tissues (PMID: 28418038)</option>
+                                                                        <option value="pseudou|26075521">Pseudouridine (Ψ) profiling in brain/liver (PMID: 26075521)</option>
+                                                                        <option value="pseudou|27510903">Pseudouridine (Ψ) profiling in multiple (PMID: 27510903)</option>
+                                                                        <option value="m1a|26863196">m1A profiling in MEFs(C57BL/6)/Liver (PMID: 26863196)</option>
+
+																	  </select>
+																											<input type="hidden" value="mouse_pubmed_type" name="check" /><br>
+													  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+
+													</div>
+														</form>
+                                                    </div>
+														
+										</div>										
+
+
+										<div id="mouse_coordinates" class="tab-pane fade" role="tabpanel">
+											<div class="tab_text">
+												<form class="form-inline align-items-center align-self-center justify-content-center d-flex"  method="POST" action="{{ url_for('process_data') }}">
+														<div class="input-group">
+														<input type="text" class="form-control align-self-center" placeholder="Enter START and STOP separated by |" required name="gene_search_field" id="auto" size="30">
+															  <div class="input-group-append">
+																    <select class="custom-select" name="chrom" id="chrom">
+																		<option value="chr1">CHR1</option>
+																		<option value="chr2">CHR2</option>
+																		<option value="chr3">CHR3</option>
+																		<option value="chr4">CHR4</option>
+																		<option value="chr5">CHR5</option>
+																		<option value="chr6">CHR6</option>
+																		<option value="chr7">CHR7</option>
+																		<option value="chr8">CHR8</option>
+																		<option value="chr9">CHR9</option>
+																		<option value="chr10">CHR10</option>
+																		<option value="chr11">CHR11</option>
+																		<option value="chr12">CHR12</option>
+																		<option value="chr13">CHR13</option>
+																		<option value="chr14">CHR14</option>
+																		<option value="chr15">CHR15</option>
+																		<option value="chr16">CHR16</option>
+																		<option value="chr17">CHR17</option>
+																		<option value="chr18">CHR18</option>
+																		<option value="chr19">CHR19</option>
+																		<option value="chrx">CHRX</option>
+																		<option value="chry">CHRY</option>
+																	  </select>
+																  <button id="button" type="submit" class="btn btn-primary align-self-center" value="submit">Search</button>
+															  </div>
+														</div>
+														<input type="hidden" value="mouse_coordinates" name="check" />
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+                           
+
+                        </div>
+                    </div>
+                </div>
+                <!--/col-8---->
+            </div>
+        </div>
+    </section>
+    
+    
+	
+	
+	
+	
+	
+	<!-- Footer ---->
+<div class="footer">
+<footer class="page-footer font-small blue pt-4 mt-4" style="background: #f8f8f8">
+  <div class="bg_f8f fire_header2 header_common" style="text-align: center">
+    <a href="http://www.iupui.edu/~jangalab/"> Janga Lab, Laboratory of Genomics and Systems Biology at Indiana University, IUPUI, Indianapolis, IN, USA<br><br></a>
+</div>
+</footer>
+<!-- Footer ---->
+</div>
+  
+
+
+
+    <!-- ======================================= 
+        ==Start scroll top==  
+    =======================================---->
+    <div class="scroll_top not_visible"><i class="fa fa-angle-up"></i></div>
+    <!-- =======================================
+        ==End scroll top==  
+    =======================================---->
+
+    <!-- jQuary library ---->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	
+    <!-- Added for autosuggest ---->
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!--bootstrap js---->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!--owl carousel js---->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+    <!--nice-select js---->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+    <!-- all jQuary activation code here and always it will be bottom of all script tag ---->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+	
+    <!--Autosuggest---->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/autosuggest/human.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/autosuggest/mouse.js') }}"></script>
+
+
+</body>
+
+</html>

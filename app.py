@@ -545,8 +545,8 @@ def contact():
         Contact reason: %s 
         Message: %s"""%(website, fname, lname, femail, reason, msg)
 
-        email = "jangalab.iupui@gmail.com"
-        pwd = "Hesoyam1"
+        email = "xx@gmail.com"
+        pwd = "xx"
 
         smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
         smtp_server.ehlo()
